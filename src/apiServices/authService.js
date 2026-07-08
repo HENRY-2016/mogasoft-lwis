@@ -134,6 +134,8 @@ class AuthService {
      */
     isAuthenticated() {
         const user = this.getCurrentUser();
+        console.log("user======>"+JSON.stringify(user))
+
         return !!user;
     }
 
